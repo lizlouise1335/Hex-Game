@@ -1,11 +1,13 @@
 # Hex-Game
+Two AI player's with different levels of insight battle each other in 2000 Hex Games, the "Smart" AI moving first for exactly 1000 of the games and the dumber AI moving first for the remaining 1000 games. The wins of the smart AI are tracked and categorized into two categories: 1. Wins with the smart AI moving first 2. Wins with it moving second
+
+Small Analysis: AIPlayers Set of smart AI's wins (going 1st): [739, 751, 749, 745, 735] Set of smart AI's wins (going 2nd): [951, 964, 956, 964, 946]... 
+The disparity in wins btwn the smarter AI going 1st and 2nd was unexpected/unexpectedly large (usually going first is a major advantage for a player). The disparity may be the result of the "more intelligent" AI being forced to make a move without any initial read on the opponent, which results in the intelligence being limited to a whole level shallower than it would be if the smart AI had gotten to go 2nd.
+
 The following explanations of the project's classes are copy-pasted from the html files. 
 
 class Driver:
 Class provides main (driving) method that kickstarts a Hex game between live players
-
-Small Analysis: AIPlayers Set of smart AI's wins (going 1st): [739, 751, 749, 745, 735] Set of smart AI's wins (going 2nd): [951, 964, 956, 964, 946]... 
-The disparity in wins btwn the smarter AI going 1st and 2nd was unexpected/unexpectedly large (usually going first is a major advantage for a player). The disparity may be the result of the "more intelligent" AI being forced to make a move without any initial read on the opponent, which results in the intelligence being limited to a whole level shallower than it would be if the smart AI had gotten to go 2nd.
 
 class AIPlayer:
 Class allows for the construction of AI players as well as the ability for the AI to select moves i.e. play the game
